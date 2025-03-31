@@ -26,19 +26,19 @@ body{
    cursor: crosshair;
    display: flex;
    flex-direction: column;
-   text-align: left;
    justify-content: center;
-   position: relative;
    font-family: 'Inter';
+   position: relative;
+   text-align: left;
    z-index: 0;
 }
 
 /*Header Section*/
 section.header-content{
    align-items: center;
+   font-weight: normal;
    position: relative;
    top: 0em;
-   font-weight: normal;
 }
 
 section.header-content div.title{
@@ -51,30 +51,29 @@ section.header-content div.title{
 }
 
 section.header-content h1{
-   text-transform: uppercase;
    font-size: 3.3em;
    font-weight: normal;
+   text-transform: uppercase;
 }
 
 section.header-content h2{
-   text-transform: uppercase;
-   padding-left: 2em;
-   line-height: 1.4em;
    font-size: 1.1em;
    font-weight: bold;
+   line-height: 1.4em;
+   padding-left: 2em;
+   text-transform: uppercase;
 }
 
 section.header-content a{
    color: #000000;
+   cursor: pointer;
+   font-size: 1.1em;
+   line-height: 1.4em;
    position: relative;
    left: 0em;
    text-align: right;
-   text-transform: uppercase;
    text-decoration: none;
-   text-align: right;
-   line-height: 1.4em;
-   font-size: 1.1em;
-   cursor: pointer;
+   text-transform: uppercase;
 }
 
 /*Main Content*/
@@ -85,12 +84,12 @@ section.main{
 }
 
 section.main h1{
-   text-transform: uppercase;
-   padding-left: 2em;
-   line-height: 1.4em;
-   text-align: left;
    font-size: 1.4em;
    font-weight: bold;
+   line-height: 1.4em;
+   padding-left: 2em;
+   text-align: left;
+   text-transform: uppercase;
 }
 
 section.main h2{
@@ -102,8 +101,8 @@ section.main h2{
 }
 
 section.main h3{
+   padding-top: 40px;
    font-size: 1.5em;
-   padding-left: 2.5em;
 }
 
 section.main div{
@@ -143,6 +142,8 @@ section.main div.synopsis section.trailer-laurels img{
 section.main div.synopsis ul li{
    list-style-type: none;
    margin: none;
+   position: relative;
+   left: -40px;
    line-height: 1.25em;
    font-size: 1.1em;
    width: 15em;
@@ -168,8 +169,8 @@ section.main div#stills img{
 }
 
 section.main div#ss a{
-   background-color: #32CD32;
-   color: #FFFFFF;
+   background-color: #FFFFFF;
+   color: #000000;
    border-radius: 5px;
    margin-top: 5px;
    padding: 5px 5px 5px 5px;
@@ -178,7 +179,7 @@ section.main div#ss a{
 }
 
 section.main div#ss a:hover{
-   background-color: #00AA00;
+   background-color: #777777;
 }
 
 section.main div#ss ul li{
@@ -188,9 +189,12 @@ section.main div#ss ul li{
    font-size: 1.1em;
    margin: none;
    width: 450px;
+   padding-top: 10px;
+   position: relative;
+   right: 5%;
 }
 
-section.main div#ss ul li p.date{
+section.main div#ss ul p.date{
    font-size: 1.1em;
    font-style: italic;
 }
@@ -205,7 +209,7 @@ section.main section.navbox{
    /*background-image: linear-gradient(270deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
 */
    position: fixed;
-   top: 10em;
+   top: 8em;
    left: 0px;
 
    z-index: 0;
@@ -237,6 +241,17 @@ section.main section.navbox div.navlink a:visited{
    width: 350px;
 }
 
+section.main section.navbox div.laurels{
+   display: block;
+   position: absolute;
+   left: 1300px;
+   top: 0px;
+}
+ section.main section.navbox div.laurels img{
+   width: 100px;
+   height: 105px;
+   }
+
 /*Footer Section*/
 section.footer{
    margin: auto;
@@ -256,7 +271,7 @@ section.footer h1{
 
 section.footer div.container{
    background-color: #FFFFFF;
-   height: 70px;
+   height: 30px;
    width: 100%;
    position: fixed;
    bottom: 0px;
@@ -265,10 +280,11 @@ section.footer div.container{
 section.footer div#contact{
    /*background-image: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
    */
-   background-color: rgba(0, 0, 0, 0.0);
+   background-color: #FFFFFF;
    display: flex;
    position: fixed;
    width: 100%;
+   height: 24px;
    bottom: 1.5em;
    align-items: center;
    z-index: 9;
@@ -285,24 +301,26 @@ section.footer div#social{
 }
 
 section.footer div#social img{
-   display: flex;
+   display: inline;
    align-items: center;
-   width: 25px;
-   height: 25px;
+   width: 40px;
+   height: 40px;
    padding-left: 10px;
    border-radius: 5px;
    position: relative;
-   bottom: 0.5em;
+   bottom: -25px;
+   cursor: pointer;
 }
 
 section.footer div.laurels{
    position: absolute;
    right: 3em;
-   bottom: -1em;
+   bottom: 0.2em;
 }
 
 section.footer div#social img.laurel{
    display: inline;
+   cursor: crosshair;
    width: 90px;
    height: 60px;
 }
@@ -319,10 +337,10 @@ section.footer div#contact h1{
 }
 
 section.footer div#contact form{
-   background-color: #32CD32;
-   color: #FFFFFF;
+   background-color: rgba(256, 256, 256, 0.0);
+   color: #000000;
    margin: auto;
-   width: 350px;
+   width: auto;
    padding: 5px 0px 5px 0px;
    border-radius: 5px;
    position: relative;
@@ -335,26 +353,30 @@ section.footer div#contact form strong{
    left: 2px;
 }
 
+section.footer div#contact div#form{
+   position: relative;
+   bottom: -10px;
+}
+
 section.footer div#contact p{
    position: relative;
-   bottom: -1em;
-   left: 33em;
+   bottom: -10px;
+   left: 20em;
    font-size: 0.8em;
    text-align: right;
    padding-right: 10px;
 }
 
 section.footer div#contact form button{
-   background-color: #000000;
-   color: #FFFFFF;
+   background-color: #FFFFFF;
+   color: #000000;
    position: relative;
    border-radius: 5px;
    cursor: pointer;
    font-weight: bold;
 }
 
-section.footer div#contact img{
-   display: inline;
+section.footer div#contact div#social img.social{
    width: 150px;
    height: 100px;
    margin: auto;
@@ -362,10 +384,13 @@ section.footer div#contact img{
 }
 
 /* Animations */
-
 @media(prefers-reduced-motion: no-preference){
-   div#social img.social:hover{
+   div#social img:hover{
       animation: img-highlight infinite 1s linear;
+  }
+
+  section.main button#navBut:hover{
+      animation: txt-highlight infinite 1s linear;
   }
 
    section.main section.navbox div.navlink a:hover{
@@ -403,95 +428,106 @@ section.footer div#contact img{
 
 @keyframes btn-highlight{
    0%{
-       color: #32CD32;
-   }
-   50%{
        color: #FFFFFF;
    }
+   50%{
+       color: #000000;
+   }
    100%{
-       color: #32CD32;
+       color: #FFFFFF;
    }
 }
 
 /*Mobile Adjustments -- mmorley*/
 @media(max-width: 640px){
    body{
+      margin: auto;
       text-align: left;
-      padding-left: 0em;
    }
 
    body p{
+      margin: auto;
       position: relative;
-      left: 0em;
-      width: 40%;
+      width: 80%;
    }
 
    section.header-content div.title{
-      align-items: flex-start;
       display: block;
       position: relative;
-      left: 2em;
-      margin-bottom: 0em;
+      margin: auto;
+      text-align: left;
    }
 
    section.header-content a{
       color: #000000;
+      margin: auto;
+      position: relative;
+      left: 30%;
+      text-align: left;
       text-decoration: none;
    }
 
    section.header-content div.title h1{
+      margin: auto;
       margin-bottom: .2em;
    }
 
    section.header-content div.title h2{
       font-size: 80%;
+      line-height: 1.6em;
       margin-bottom: 1em;
       padding-left: 0px;
-      line-height: 1.6em;
+      position: relative;
+      left: 30%;
    }
 
    section.main{
       margin: auto;
-      text-align: center;
+      text-align: left;
    }
 
    section.main h3{
       position: relative;
-      left: -10em;
+      left: 8.5%;
+      text-align: left;
    }
 
    section.main div.synopsis p{
-      text-align: left;
       position: relative;
-      left: 1em;
+      text-align: left;
+   }
+
+   section.main div.synopsis div.video{
+      margin: auto;
+      width: 80%;
+      height: auto;
    }
 
    section.main div.synopsis div.video iframe{
-      position: relative;
-      left: -12em;
-      width: 50%;
       height: 180px;
    }
    
    section.main div.synopsis section.trailer-laurels img{
       position: relative;
-      left: -13em;
+      left: 0;
    }
    
    section.main div.synopsis ul li{
+      position: relative;
+      left: 4%;
       text-align: left;
    }
    
    section.main section.navbox{
       background-color: white;
-      text-align: left;
+      border: 1px solid black;
+      border-radius: 5px;
       position: fixed;
       bottom: 10%;
+      width: 30%;
+      height: 20%;
+      text-align: left;
       word-wrap: break-word;
-      width: 13%;
-      height: 8em;
-      background-color: #FFFFFF;
-      border: 1px solid red;
    }
 
    section.main section.navbox div.navlink{
@@ -499,99 +535,146 @@ section.footer div#contact img{
    }
 
    section.main section.navbox div.navlink a{
-      font-size: 8px;
+      font-size: 30px;
       font-weight: bold;
       position: relative;
-      right: 1.5em;
-      width: 60px;
+      right: 15%;
+      width: 15%;
       word-wrap: break-word;
+      text-align: left;
+   }
+
+   section.main button#navBut{
+      background-color: #FFFFFF;
+      border: 1px solid black;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 20px;
+      font-weight: bold;
+      position: fixed;
+      left: 0%;
+      top: 9.5%;
    }
 
    section.main div#artistbios img{
       position: relative;
-      left: -12em;
+      left: 8.5%;
+      width: 65%;
+      height: 65%;
    }
 
    section.main div#artistbios p{
       text-align: left;
       position: relative;
-      left: 1em;
    }
 
    section.main div#stills img{
       display: inline;
+      margin: auto;
       position: relative;
-      left: -12em;
-      width: 20%;
-      height: 100px;
+      left: 8.5%;
+      width: 45%;
+      height: 300px;
    }
    
    section.main div#ss nav#shows{
       position: relative;
-      left: 0em;
-      width: 40%;
+      width: 100%;
    }
       
    section.main div#ss nav#shows a{
-      width: 40%;
+      width: 100%;
       word-wrap: break-word;
    }
-    
-   section.main div#ss nav#shows ul li p{
+
+   section.main section.navbox div.laurels img{
+   display: block;
+      position: relative;
+      left: 0%;
+      bottom: 0%;
+      width: 100px;
+      height: 150px;
+   }
+
+   section.main div#ss ul li{
       width: 80%;
+      text-align: left;
+      position: relative;
+      left: 3%;
    }
    
    section.footer div#contact{
       color: #000000;
+      display: block;
       font-size: 90%;
+      position: fixed;
+      bottom: 0%;
+      height: 100px;
    }
 
    section.footer div.container{
+      background-color: #FFFFFF;
+      display: block;
       position: fixed;
-      bottom: 0px;
-      left: 0px;
-      width: 100%;
-      height: 80px;
+      width: auto;
+      height: 200px;
    }
 
    section.footer div#contact h1{
       font-size: 20px;
       position: relative;
       bottom: -2em;
-      left: 1em;
    }
 
    section.footer div#contact p{
-      font-size: 10px;
+      display: block;
+      font-size: 20px;
       position: relative;
-      bottom: -3.8em;
-      left: 2em;
-      width: 47%;
+      left: 0%;
+      bottom: 5%;
+      width: 300px;
+      word-wrap: break-word;
+      visibility: hidden;
    }
 
    section.footer div#contact form{
+      display: block;
       text-align: center;
       position: absolute;
-      bottom: 1em;
-      left: 11em;
+      left: -20px;
       width: 40%;
+      font-size: 20px;
+   }
+
+   section.footer div#contact div#form{
+      position: relative;
+      bottom: 50px;
+      left: 200px;
    }
 
    section.footer div#contact form input{
-      width: 50%;
+      position: relative;
+      font-size: 20px;
+      width: 40%;
    }
 
    section.footer div.container div#contact form button{
-      font-size: 80%;
-      width: 80%;
+      border: 1px solid black;
+      border-radius: 3px;
+      font-size: 100%;
+      position: relative;
+      left: 80%;
+      bottom: 35px;
+      width: auto;
    }
 
-   section.footer div.container div#social div.laurels img{
-      display: block;
-      position: relative;
-      left: 2em;
-      bottom: 0em;
-      width: 60px;
-      height: 40px;
+   section.footer div.container div#social div.social{
+      width: auto;
+   }
+
+   section.footer div.container div#social img{
+      height: 80px;
+      width: 80px;
+      bottom: -30px;
    }
 }

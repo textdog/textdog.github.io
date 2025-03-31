@@ -101,12 +101,12 @@ section.above-the-fold header nav a img {
 section.above-the-fold div.vertical-align p.tooltip{
     display: inline;
     position: absolute;
-    top: 12%;
+    top: 7%;
     right: 10%;
-    visibility: visible;
+    visibility: hidden;
     color: #000000;
     border-radius: 2px;
-    z-index: 1;
+    z-index: 5;
 }
 
 section.above-the-fold div.vertical-align img.head-laurel:hover{
@@ -127,7 +127,7 @@ section.above-the-fold div.vertical-align img.head-laurel{
     display: none;
     position: absolute;
     right: 5%;
-    top: 10%;
+    top: 8.7%;
     width: auto;
     height: 0%;
     border-radius: 5px;
@@ -284,6 +284,7 @@ section.above-the-fold main img.social{
 section.above-the-fold main div.social img{
     position: relative;
     left: 90%;
+    top: 10%;
     bottom: 4em;
     height: 25px;
     width: 25px;
@@ -455,10 +456,29 @@ section.below-the-fold img {
     section.above-the-fold form input {
         width: 100%;
     }
-    section.above-the-fold main img.social{
+    section.above-the-fold main div.social img{
         position: relative;
-        left: 50%;
-        bottom: -2em;
+        left: 60%;
+        bottom: 30%;
+    }
+    section.above-the-fold div.vertical-align p.tooltip{
+        position: relative;
+        bottom: 50%;
+        right: 30%;
+    }
+    section.above-the-fold div.vertical-align img.head-laurel{
+        position: relative;
+        bottom: 1em;
+    }
+    section.above-the-fold div.vertical-align div#accol{
+        position: relative;
+        top: 32%;
+        width: 100%;
+        height: auto;
+    }
+    section.above-the-fold div.vertical-align div#accol img{
+        width: 30%;
+        height: 20%;
     }
     section.above-the-fold main h4 {
         line-height: 1.4em;
